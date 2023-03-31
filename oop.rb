@@ -5,17 +5,20 @@
 #with "*~*" at the beginning and end of the string
 
 class Unicorn
-    def initialize(name, color)
+    def initialize(name)
         @color = "silver"
         @name = name
     end
 
-    def say(sparkles)
+    def say
         @sparkles = "*~*"
         "#{@sparkles} My name is #{@name} and I am a majestic Unicorn#{@sparkles}"
     end
 end
 
+unicorn_1 = Unicorn.new("Elyra")
+p unicorn_1
+p unicorn_1.say
 
 
 #  Write a class called Vampire
