@@ -94,6 +94,38 @@ end
 #  it should have a dynamic disposition attribute (string)
 #  it should have an age attribute that defaults to 0
 #  it should have a celebrate_birthday method. When called, the age increases by 1
-#  it should have an is_adult attribute (boolean) that is false by default. once a Hobbit is 33, it should be an adult
-#  it should have an is_old attribute that defaults to false. once a Hobbit is 101, it is old.
+#  it should have an is_adult attribute (boolean) that is false by default. 
+# once a Hobbit is 33, it should be an adult
+#  it should have an is_old attribute that defaults to false. 
+# once a Hobbit is 101, it is old.
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
+
+class Hobbit
+    def initialize(name, disposition, age)
+        @name = name
+        @disposition = disposition
+        @age = 0
+        @is_old = false
+        @is_adult = false
+        @has_ring = false
+    end
+
+    def celebrate_birthday
+        @age += 1
+    end
+
+        if @age >= 33
+            @is_adult = true
+        end
+
+        if @age >= 101
+            @is_old = true
+        end
+
+        if @name = "Frodo"
+            @has_ring = true
+        end
+    end
+end
+
+
