@@ -62,6 +62,42 @@ p dracula
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
 
+class Dragon
+    def initialize(name, rider, color)
+        @name = name
+        @rider = rider
+        @color = color
+        @is_hungry = true
+        @meals = 0
+    end
+
+    def eat_method
+        if @meals < 4
+         @meals += 1
+        else 
+            @is_hungry = false
+        end
+    end
+end
+
+
+    dragon_1 = Dragon.new("Pete", "Antonius", "Purple")
+    p dragon_1.eat_method
+    p dragon_1
+    p dragon_1.eat_method
+    p dragon_1
+    p dragon_1.eat_method
+    p dragon_1
+    p dragon_1.eat_method
+    p dragon_1
+    p dragon_1.eat_method
+    p dragon_1
+
+    
+
+
+        
+
 
 #  Write a Hobbit class
 #  it should have a dynamic name attribute (string)
