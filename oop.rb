@@ -101,7 +101,7 @@ end
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
 
 class Hobbit
-    def initialize(name, disposition, age)
+    def initialize(name, disposition)
         @name = name
         @disposition = disposition
         @age = 0
@@ -139,4 +139,5 @@ p hobbit_1.celebrate_birthday
 p hobbit_1
 p hobbit_1.one_ring
 p hobbit_1
+
 
