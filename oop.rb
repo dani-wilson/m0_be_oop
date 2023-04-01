@@ -110,10 +110,13 @@ class Hobbit
         @has_ring = false
     end
 
-    def celebrate_birthday
-        @age += 1
+    
+    if @name == "Frodo"
+        @has_ring = true
     end
 
+    def celebrate_birthday
+        @age += 1
         if @age >= 33
             @is_adult = true
         end
@@ -121,11 +124,19 @@ class Hobbit
         if @age >= 101
             @is_old = true
         end
+    end
 
-        if @name = "Frodo"
+    def one_ring
+        if @name == "Frodo"
             @has_ring = true
         end
     end
 end
 
+hobbit_1 = Hobbit.new("Frodo", "Whiny")
+p hobbit_1
+p hobbit_1.celebrate_birthday
+p hobbit_1
+p hobbit_1.one_ring
+p hobbit_1
 
