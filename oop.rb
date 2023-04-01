@@ -82,22 +82,12 @@ end
 
 
     dragon_1 = Dragon.new("Pete", "Antonius", "Purple")
-    p dragon_1.eat_method
     p dragon_1
-    p dragon_1.eat_method
-    p dragon_1
-    p dragon_1.eat_method
-    p dragon_1
-    p dragon_1.eat_method
-    p dragon_1
-    p dragon_1.eat_method
-    p dragon_1
+  5.times do dragon_1.eat_method
+  end
+  p dragon_1
 
     
-
-
-        
-
 
 #  Write a Hobbit class
 #  it should have a dynamic name attribute (string)
